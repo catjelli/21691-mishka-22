@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Valery](https://up.htmlacademy.ru/adaptive/22/user/21691).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Вадясова](https://htmlacademy.ru/profile/ad0v0).
 
 ---
 
