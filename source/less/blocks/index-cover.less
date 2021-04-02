@@ -1,7 +1,33 @@
-.index-cover__title {
-  font-style: normal;
-  font-size: 27px;
-  line-height: 30px;
-  font-weight: 700;
-  color: @black;
+.index-cover {
+  width: 320px;
+  height: 373px;
+  background-image: url("../img/index-background-small.jpg");
+  background-size: cover;
+
+  &__title {
+    font-style: normal;
+    font-size: 27px;
+    line-height: 30px;
+    font-weight: 700;
+    color: @basic-black;
+  }
+
+  &__item {
+    display: block;
+    width: 320px;
+    height: 103px;
+    font-size: 19px;
+    line-height: 24px;
+    font-weight: 700;
+    color: @basic-white;
+  }
+
+  &-interior {
+    background-color: @basic-green;
+  }
+
+  &-toys {
+    background-color: @medium-green;
+  }
 }
+
