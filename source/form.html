@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка | Вязание на заказ</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page-body">
+  <body class="page__body">
     <header class="page-header">
       <a class="logo page-header__logo" href="index.html">
         <img src="img/mishka-logo-underline.svg" width="86" height="35" alt="Логотип магазина Мишка">
@@ -14,20 +15,20 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-nav">
+        <ul class="main-nav__list site-nav reset-list">
           <li class="site-nav__item">
-            <a href="catalog.html">Каталог товаров</a>
-          <ul class="site-nav-sub">
+            <a class="site-nav__link" href="catalog.html">Каталог товаров</a>
+          <ul class="site-nav-sub reset-list">
             <li class="site-nav-sub__item">
-              <a href="#!">Новые поступления</a>
+              <a class="site-nav-sub__link" href="#!">Новые поступления</a>
             </li>
             <li class="site-nav-sub__item">
-              <a href="#!">Распродажа</a>
+              <a class="site-nav-sub__link" href="#!">Распродажа</a>
             </li>
           </ul>
           </li>
           <li class="site-nav__item">
-            <a>Вязание на заказ</a>
+            <a class="site-nav__link">Вязание на заказ</a>
           </li>
         </ul>
         <ul class="main-nav__list user-nav">
@@ -49,7 +50,7 @@
           уточнить детали.</p>
         <fieldset class="order-form__item">
           <legend class="order-form__legend">Тип</legend>
-          <ul>
+          <ul class="reset-list">
             <li>
               <input type="radio" name="type-of-product" value="interior-accessory" id="interior-accessory">
               <label for="interior-accessory">Аксессуар для интерьера</label>
@@ -62,7 +63,7 @@
         </fieldset>
         <fieldset class="order-form__item">
           <legend class="order-form__legend">Цвет</legend>
-          <ul>
+          <ul class="reset-list">
             <li>
               <input type="checkbox" name="white" id="white" checked>
               <label for="white">Белый</label>
@@ -130,7 +131,7 @@
       </a>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Соцсети</h2>
-        <ul class="social__list">
+        <ul class="social__list reset-list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#!">Instagram</a>
           </li>

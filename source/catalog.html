@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Мишка | Каталог товаров</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="page-body">
+  <body class="page__body">
     <header class="page-header">
       <a class="logo page-header__logo" href="index.html">
         <img src="img/mishka-logo-underline.svg" width="86" height="35" alt="Логотип магазина Мишка">
@@ -14,23 +15,23 @@
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list site-nav">
+        <ul class="main-nav__list site-nav reset-list">
           <li class="site-nav__item">
-            <a href="#!">Каталог товаров</a>
-            <ul class="site-nav-sub">
+            <a class="site-nav__link">Каталог товаров</a>
+            <ul class="site-nav-sub reset-list">
               <li class="site-nav-sub__item">
-                <a href="#!">Новые поступления</a>
+                <a class="site-nav-sub__link" href="#!">Новые поступления</a>
               </li>
               <li class="site-nav-sub__item">
-                <a href="#!">Распродажа</a>
+                <a class="site-nav-sub__link" href="#!">Распродажа</a>
               </li>
             </ul>
           </li>
           <li class="site-nav__item">
-            <a href="form.html">Вязание на заказ</a>
+            <a class="site-nav__link" href="form.html">Вязание на заказ</a>
           </li>
         </ul>
-        <ul class="main-nav__list user-nav">
+        <ul class="main-nav__list user-nav reset-list">
           <li class="user-nav__item">
             <a class="user-nav__search" href="#!">Поиск по сайту</a>
           </li>
@@ -45,7 +46,7 @@
     <main class="page-main">
       <h1 class="catalog-title">Каталог товаров</h1>
       <section class="catalog">
-        <ul class="catalog__list">
+        <ul class="catalog__list reset-list">
           <li class="catalog__item">
             <article class="product">
               <a class="product__image-link" href="#!">
@@ -57,7 +58,7 @@
               </div>
               <div class="product__price-wrapper">
                 <p class="product__price">1 200 руб.</p>
-                <button class="product__button" type="button">Добавить в корзину</button>
+                <button class="button product__button" type="button">Добавить в корзину</button>
               </div>
             </article>
           </li>
@@ -72,7 +73,7 @@
               </div>
               <div class="product__price-wrapper">
                 <p class="product__price">690 руб.</p>
-                <button class="product__button" type="button">Добавить в корзину</button>
+                <button class="button product__button" type="button">Добавить в корзину</button>
               </div>
             </article>
           </li>
@@ -87,7 +88,7 @@
               </div>
               <div class="product__price-wrapper">
                 <p class="product__price">1 500 руб.</p>
-                <button class="product__button" type="button">Добавить в корзину</button>
+                <button class="button product__button" type="button">Добавить в корзину</button>
               </div>
             </article>
           </li>
@@ -113,7 +114,7 @@
       </a>
       <section class="page-footer__social social">
         <h2 class="visually-hidden">Соцсети</h2>
-        <ul class="social__list">
+        <ul class="social__list reset-list">
           <li class="social__item">
             <a class="social__link social__link--instagram" href="#!">Instagram</a>
           </li>
