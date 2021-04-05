@@ -75,7 +75,7 @@
         </div>
         <img class="week-product__img" src="img/triple-set-small.jpg" width="260" height="315" alt="Набор из трёх вязаных корзинок разных цветов.">
         <p class="week-product__price">Цена: 990 руб.</p>
-        <a class="button week-product__button" href="#!">Заказать</a>
+        <a class="week-product__button" href="#!">Заказать</a>
       </section>
 
       <section class="about">
@@ -189,6 +189,34 @@
         </section>
       </div>
     </footer>
+
+    <!--Модальное окно-->
+    <div class="modal-overlay"></div>
+    <div class="modal-wrapper">
+      <section class="modal">
+        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+        <form class="modal-form">
+          <fieldset class="modal-form__item">
+            <legend class="modal-form__legend">Выберите размер:</legend>
+            <ul class="reset-list modal-form__list">
+              <li>
+                <label for="size-s">S</label>
+                <input type="radio" name="size" value="s" id="size-s">
+              </li>
+              <li>
+                <label for="size-m">M</label>
+                <input type="radio" name="size" value="m" id="size-m">
+              </li>
+              <li>
+                <label for="size-l">L</label>
+                <input type="radio" name="size" value="l" id="size-l">
+              </li>
+            </ul>
+          </fieldset>
+          <button class="modal__button" type="button">Добавить</button>
+        </form>
+      </section>
+    </div>
 
   </body>
 </html>
