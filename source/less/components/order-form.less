@@ -1,0 +1,63 @@
+.order-form {
+  padding: 19px 30px 57px;
+}
+
+.order-form__description {
+  margin-top: 0;
+  margin-bottom: 29px;
+  font-size: 13px;
+}
+
+.order-form__fieldset {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  border: none;
+}
+
+.order-form__legend {
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: @basic-green;
+  text-transform: uppercase;
+}
+
+.order-form__list {
+  .reset-list();
+}
+
+.order-form__label {
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: @basic-black;
+}
+
+.order-form__input {
+  font-size: 19px;
+  line-height: 18px;
+  color: @basic-black;
+
+  &::placeholder {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: @basic-black;
+    opacity: 0.3;
+  }
+}
+
+.order-form__disclamer {
+  font-size: 14px;
+  line-height: 16px;
+  color: @medium-grey;
+}
+
+.order-form__button {
+  .button;
+  padding: 17px 44px;
+  font-size: 17px;
+  line-height: 16px;
+}

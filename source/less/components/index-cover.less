@@ -1,0 +1,44 @@
+.index-cover {
+  height: 489px;
+
+  &-interior {
+    background-color: @basic-green;
+    .cover-button();
+  }
+
+  &-toys {
+    background-color: @medium-green;
+    .cover-button();
+  }
+}
+
+.index-cover__container {
+  width: 320px;
+  height: 290px;
+  margin: 0 auto;
+  padding-top: 52px;
+  text-align: center;
+  background-color: @index-background;
+  background-image: url("../img/index-background-small.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.index-cover__title {
+  padding-bottom: 98px;
+  font-style: normal;
+  font-size: 27px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @basic-black;
+}
+
+.index-cover__item {
+  display: block;
+  width: 290px;
+  height: 79px;
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: @basic-white;
+}
