@@ -1,7 +1,16 @@
-.week-product {
+.week-product__container {
   width: 260px;
   margin: 0 auto;
   padding: 33px 30px 36px 30px;
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .help-outline(@red);
 }
 
 .week-product__title {
@@ -12,6 +21,12 @@
   line-height: 30px;
   font-weight: 700;
   color: @basic-black;
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .help-outline(@green);
 }
 
 .week-product__label {
