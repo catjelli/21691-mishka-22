@@ -1,5 +1,10 @@
 .slider {
   margin-bottom: 48px;
+  @media (min-width: @tablet-width) {
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 .slider__item {
@@ -12,6 +17,10 @@
 
 .slider__controls {
   padding-top: 30px;
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+  }
 }
 
 .slider__control {

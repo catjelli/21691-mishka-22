@@ -17,6 +17,8 @@
     width: 668px;
     margin: 0 auto;
     padding: 78px 50px 0;
+    display: grid;
+    grid-template-columns: 334px 334px;
   }
 
   .help-outline(@green);
@@ -84,4 +86,10 @@
   font-size: 18px;
   line-height: 20px;
   text-decoration: none;
+  @media (min-width: @tablet-width) {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    place-self: end;
+    align-self: start;
+  }
 }
