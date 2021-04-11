@@ -11,7 +11,14 @@
   overflow: hidden;
 }
 
+.page {
+  height: 100%;
+}
+
 .page__body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
   margin: 0;
   font-style: normal;
   font-size: 15px;
