@@ -1,7 +1,5 @@
 .catalog {
   padding: 0;
-
-  .help-outline(@pink);
 }
 
 .catalog__container {
@@ -13,12 +11,22 @@
     margin: 0 auto;
     padding: 100px 50px 0 50px;
   }
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    margin: 0 auto;
+    padding: 134px 50px 0;
+  }
 
   .help-outline(@green);
 }
 
 .catalog__list {
   .reset-list();
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+  .help-outline(@blue);
 }
 
 .catalog__item {
