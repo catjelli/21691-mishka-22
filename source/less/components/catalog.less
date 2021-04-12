@@ -1,11 +1,20 @@
 .catalog {
   padding: 0;
+
+  .help-outline(@pink);
 }
 
 .catalog__container {
   width: 260px;
   margin: 0 auto;
   padding: 30px 0 0;
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    padding: 100px 50px 0 50px;
+  }
+
+  .help-outline(@green);
 }
 
 .catalog__list {
@@ -14,4 +23,7 @@
 
 .catalog__item {
   padding-bottom: 36px;
+  @media (min-width: @tablet-width) {
+    padding-bottom: 54px;
+  }
 }
