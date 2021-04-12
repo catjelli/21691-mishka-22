@@ -1,0 +1,22 @@
+.color-list {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 410px;
+  }
+  .help-outline(@pink);
+}
+
+.color-list__item{
+  @media (min-width: @tablet-width) {
+    width: 175px;
+    margin-right: 60px;
+  }
+}
+
+.color-list__item:nth-child(2n) {
+  @media (min-width: @tablet-width) {
+    margin: 0;
+  }
+}
