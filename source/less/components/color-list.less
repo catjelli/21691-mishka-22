@@ -1,22 +1,28 @@
 .color-list {
+  .reset-list();
   @media (min-width: @tablet-width) {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 410px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 86px;
   }
   .help-outline(@pink);
 }
 
 .color-list__item{
   @media (min-width: @tablet-width) {
-    width: 175px;
-    margin-right: 60px;
+    width: 151px;
+    margin-right: 94px;
+    margin-bottom: 51px;
   }
+  .help-outline(@green);
 }
 
 .color-list__item:nth-child(2n) {
   @media (min-width: @tablet-width) {
-    margin: 0;
+    margin-right: 0;
   }
 }
