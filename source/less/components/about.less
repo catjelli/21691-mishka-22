@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 37px 30px 0 30px;
   color: @basic-black;
+
   @media (min-width: @tablet-width) {
     width: 668px;
     margin: 0 auto;
@@ -10,6 +11,7 @@
     padding-right: 50px;
     padding-left: 50px;
   }
+
   @media (min-width: @desktop-width) {
     width: 699px;
     padding-top: 126px;
@@ -22,10 +24,12 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+
   @media (min-width: @tablet-width) {
     font-size: 43px;
     line-height: 50px;
   }
+
   @media (min-width: @tablet-width) {
     font-size: 53px;
     line-height: 57px;
@@ -35,6 +39,7 @@
 .about__list {
   .reset-list();
   padding-bottom: 58px;
+
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
@@ -43,6 +48,7 @@
     height: 385px;
     padding-top: 96px;
   }
+
   @media (min-width: @desktop-width) {
     width: 699px;
   }
@@ -55,7 +61,8 @@
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
-  &--flower:before {
+
+  &--flower::before {
     content: "";
     position: absolute;
     bottom: 58px;
@@ -64,7 +71,8 @@
     width: 33px;
     height: 38px;
   }
-  &--banknote:before {
+
+  &--banknote::before {
     content: "";
     position: absolute;
     bottom: 68px;
@@ -73,7 +81,8 @@
     width: 47px;
     height: 27px;
   }
-  &--heart:before {
+
+  &--heart::before {
     content: "";
     position: absolute;
     bottom: 64px;
@@ -82,7 +91,8 @@
     width: 34px;
     height: 27px;
   }
-  &--threads:before {
+
+  &--threads::before {
     content: "";
     position: absolute;
     bottom: 58px;
@@ -91,7 +101,8 @@
     width: 35px;
     height: 34px;
   }
-  &--rocket:before {
+
+  &--rocket::before {
     content: "";
     position: absolute;
     bottom: 68px;
@@ -100,7 +111,8 @@
     width: 55px;
     height: 23px;
   }
-  &--gift:before {
+
+  &--gift::before {
     content: "";
     position: absolute;
     bottom: 62px;
@@ -109,16 +121,19 @@
     width: 33px;
     height: 32px;
   }
+
   @media (min-width: @tablet-width) {
     width: 334px;
     padding: 0;
     padding-bottom: 112px;
     font-size: 20px;
     line-height: 22px;
+
     &:nth-child(3n) {
       padding: 0;
     }
-    &--flower:before {
+
+    &--flower::before {
       content: "";
       position: absolute;
       top: -55px;
@@ -127,7 +142,8 @@
       width: 33px;
       height: 38px;
     }
-    &--banknote:before {
+
+    &--banknote::before {
       content: "";
       position: absolute;
       top: -54px;
@@ -136,7 +152,8 @@
       width: 47px;
       height: 27px;
     }
-    &--heart:before {
+
+    &--heart::before {
       content: "";
       position: absolute;
       bottom: 68px;
@@ -145,7 +162,8 @@
       width: 34px;
       height: 27px;
     }
-    &--threads:before {
+
+    &--threads::before {
       content: "";
       position: absolute;
       top: -52px;
@@ -154,7 +172,8 @@
       width: 35px;
       height: 34px;
     }
-    &--rocket:before {
+
+    &--rocket::before {
       content: "";
       position: absolute;
       top: -50px;
@@ -163,7 +182,8 @@
       width: 55px;
       height: 23px;
     }
-    &--gift:before {
+
+    &--gift::before {
       content: "";
       position: absolute;
       bottom: 66px;
