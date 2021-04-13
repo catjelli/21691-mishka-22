@@ -5,7 +5,7 @@
     padding: 0;
     padding-top: 90px;
   }
-  .help-outline(@green);
+  //.help-outline(@green);
 }
 
 .order-form__description {
@@ -23,58 +23,88 @@
 }
 
 .order-form__fieldset {
-  margin-top: 0;
-  margin-bottom: 50px;
+  margin: 0;
   padding: 0;
   border: none;
+  padding-bottom: 36px;
 
-  @media (min-width: @tablet-width) {
-    padding: 74px 50px 54px 50px;
-    margin: 0;
-    display: flex;
+  &--type {
+    padding-bottom: 42px;
   }
 
-  .help-outline(@red);
+  &--color {
+    padding-bottom: 43px;
+  }
+
+  &--wishes {
+    padding-bottom: 0;
+  }
+
+  //.help-outline(@red);
 }
 
 .order-form__legend {
+  padding: 0;
+  margin: 0;
   font-size: 17px;
   line-height: 16px;
   font-weight: 700;
   color: @basic-green;
   text-transform: uppercase;
 
-  @media (min-width: @tablet-width) {
-    margin: 0;
-    margin-right: 120px;
+  &--wishes {
+    margin-bottom: 22px;
   }
-  .help-outline(@green);
+
+  //.help-outline(@green);
 }
 
-//.order-form__list {
-//  .reset-list();
-//  @media (min-width: @tablet-width) {
-//    padding-left: 90px;
-//  }
-//
-//  .help-outline(@blue);
-//}
+.order-form__list {
+  .reset-list();
+  padding-top: 34px;
 
-//.order-form__item {
-//  @media (min-width: @tablet-width) {
-//    margin-bottom: 44px;
-//  }
-//}
+  &--type {
+    padding-left: 60px;
+  }
 
-.order-form__label {
+  &--color {
+    padding-left: 62px;
+  }
+
+  &--name {
+    padding-top: 30px;
+  }
+}
+
+.order-form__item {
+  margin-bottom: 10px;
   font-size: 17px;
   line-height: 18px;
   font-weight: 700;
   color: @basic-black;
 
-  @media (min-width: @tablet-width) {
-    font-size: 19px;
-    line-height: 18px;
+  &--type {
+    margin-bottom: 26px;
+  }
+
+  &--type:last-child {
+    margin: 0;
+  }
+
+  &--color {
+    margin-bottom: 43px;
+  }
+
+  &--color:last-child {
+    margin: 0;
+  }
+
+  &--name {
+    margin-bottom: 24px;
+  }
+
+  &--name:last-child {
+    margin: 0;
   }
 }
 
@@ -82,6 +112,11 @@
   font-size: 19px;
   line-height: 18px;
   color: @basic-black;
+  border: none;
+  border-bottom: 2px solid @medium-grey;
+  width: 260px;
+  padding-top: 16px;
+  padding-bottom: 10px;
 
   &::placeholder {
     font-size: 17px;
@@ -91,17 +126,34 @@
     color: @basic-black;
     opacity: 0.3;
   }
+
+  &--phone {
+    padding-bottom: 14px;
+  }
+
+  &--email {
+    padding-top: 19px;
+    padding-bottom: 12px;
+  }
+
+  &--wishes {
+    box-sizing: border-box;
+    border: 2px solid @medium-grey;
+    padding-left: 16px;
+    //padding-bottom: 14px;
+  }
 }
 
 .order-form__disclamer {
   font-size: 14px;
   line-height: 16px;
   color: @medium-grey;
+  margin-bottom: 30px;
 }
 
 .order-form__button {
   .button;
-  padding: 17px 44px;
+  padding: 17px 45px;
   font-size: 17px;
   line-height: 16px;
 }
