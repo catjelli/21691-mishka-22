@@ -1,28 +1,64 @@
 .modal {
   width: 260px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 30px 30px 50px;
+
+  .help-outline(@pink);
 }
 
 .modal__title {
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
   font-size: 25px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
 }
 
+.modal-form__fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.modal-form__legend {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 30px;
+  text-align: center;
+}
+
 .modal-form__list {
   .reset-list();
+  display: flex;
+  justify-content: space-between;
+  width: 260px;
+  padding-top: 22px;
+  padding-bottom: 32px;
 }
 
 .modal-form__item {
-  margin-bottom: 20px;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding-top: 12px;
+  width: 82px;
+  height: 52px;
+  box-sizing: border-box;
+  border: 2px solid @medium-grey;
+  text-align: center;
+  & label {
+    font-size: 17px;
+    line-height: 16px;
+    font-weight: 700;
+  }
 }
 
 .modal__button {
-  padding: 16px 82px;
+  padding: 17px 82px;
   font-weight: 700;
   font-family: "Open Sans", "Arial", sans-serif;
   text-transform: uppercase;
