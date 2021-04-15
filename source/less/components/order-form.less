@@ -55,7 +55,42 @@
       padding-bottom: 0;
       background-color: @background-grey;
     }
+
+    &--name {
+      display: flex;
+      padding-top: 75px;
+      padding-left: 50px;
+      padding-bottom: 50px;
+      padding-right: 50px;
+    }
+
+    &--phone {
+      display: flex;
+      padding-top: 69px;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 0;
+      background-color: @background-grey;
+    }
+
+    &--email {
+      display: flex;
+      padding-left: 50px;
+      padding-top: 40px;
+      padding-right: 50px;
+      background-color: @background-grey;
+    }
+
+    &--wishes {
+      display: flex;
+      padding-left: 50px;
+      padding-top: 32px;
+      padding-right: 50px;
+      padding-bottom: 0;
+    }
   }
+
+  .help-outline(@blue);
 }
 
 .order-form__legend {
@@ -74,6 +109,19 @@
   @media (min-width: @tablet-width) {
     &--color {
       padding-top: 2px;
+    }
+
+    &--phone {
+      margin-right: 135px;
+    }
+
+    &--email {
+      margin-right: 108px;
+    }
+
+    &--wishes {
+      margin-right: 128px;
+      padding-top: 20px;
     }
   }
 
@@ -108,7 +156,14 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    &--name {
+      padding-top: 0;
+      padding-left: 124px;
+    }
   }
+
+  .help-outline(@pink);
 }
 
 .order-form__item {
@@ -162,7 +217,17 @@
     &--color:nth-child(2n) {
       padding: 0;
     }
+
+    &--name {
+      margin-bottom: 41px;
+      min-width: 500px;
+      display: flex;
+    }
   }
+}
+
+.order-form__label {
+  margin-right: 23px;
 }
 
 .order-form__input {
@@ -198,6 +263,39 @@
     border: 2px solid @medium-grey;
     padding-left: 16px;
   }
+
+  @media (min-width: @tablet-width) {
+    &--name {
+      padding-top: 0;
+      flex-grow: 1;
+    }
+
+    &::placeholder {
+      font-size: 19px;
+      padding-left: 21px;
+    }
+
+    &--phone {
+      padding-top: 0;
+      flex-grow: 1;
+      background-color: @background-grey;
+    }
+
+    &--email {
+      padding-top: 0;
+      flex-grow: 1;
+      background-color: @background-grey;
+    }
+
+    &--wishes {
+      flex-grow: 1;
+      padding-left: 0;
+    }
+
+    &--wishes::placeholder {
+      padding-left: 14px;
+    }
+  }
 }
 
 .order-form__disclamer {
@@ -205,6 +303,11 @@
   line-height: 16px;
   color: @medium-grey;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
 .order-form__button {
@@ -212,4 +315,11 @@
   padding: 17px 45px;
   font-size: 17px;
   line-height: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    margin-top: 8px;
+    width: 230px;
+    height: 52px;
+  }
 }
