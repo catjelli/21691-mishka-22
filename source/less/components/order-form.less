@@ -5,7 +5,7 @@
     padding: 0;
     padding-top: 90px;
   }
-  //.help-outline(@green);
+
 }
 
 .order-form__description {
@@ -34,8 +34,15 @@
   width: auto;
   margin: 0;
   padding: 0;
-  background-color: @background-grey;
   border: none;
+
+  @media (min-width: @tablet-width) {
+    background-color: @background-grey;
+
+    &--name {
+      background-color: transparent;
+    }
+  }
 }
 
 
@@ -113,16 +120,24 @@
       padding-top: 62px;
     }
 
+    &--name {
+      padding-right: 0;
+    }
+
     &--phone {
       padding-top: 68px;
+      padding-right: 0;
     }
 
     &--email {
       padding-top: 34px;
+      padding-right: 0;
+    }
+
+    &--wishes {
+      padding-right: 0;
     }
   }
-
-  .help-outline(@blue);
 }
 
 .order-form__legend {
@@ -170,8 +185,6 @@
       margin-right: 72px;
     }
   }
-
-  //.help-outline(@green);
 }
 
 .order-form__list {
@@ -222,8 +235,6 @@
       padding-left: 74px;
     }
   }
-
-  .help-outline(@pink);
 }
 
 .order-form__item {
@@ -280,7 +291,8 @@
 
     &--name {
       margin-bottom: 41px;
-      min-width: 500px;
+      //min-width: 500px;
+      width: 500px;
       display: flex;
     }
   }
@@ -292,11 +304,9 @@
     }
 
     &--name {
-      min-width: 700px;
+      width: 700px;
     }
   }
-
-  //.help-outline(@red);
 }
 
 .order-form__label {
@@ -349,12 +359,14 @@
     }
 
     &--phone {
+      max-width: 700px;
       padding-top: 0;
       flex-grow: 1;
       background-color: @background-grey;
     }
 
     &--email {
+      max-width: 700px;
       padding-top: 0;
       flex-grow: 1;
       background-color: @background-grey;
@@ -363,6 +375,7 @@
     &--wishes {
       flex-grow: 1;
       padding-left: 0;
+      max-width: 700px;
     }
 
     &--wishes::placeholder {
@@ -376,17 +389,17 @@
     }
 
     &--phone {
-      min-width: 700px;
+      width: 700px;
       flex-grow: 0;
     }
 
     &--email {
-      min-width: 700px;
+     width: 700px;
       flex-grow: 0;
     }
 
     &--wishes {
-      min-width: 700px;
+      width: 700px;
       flex-grow: 0;
     }
   }
