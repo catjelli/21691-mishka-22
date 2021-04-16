@@ -19,6 +19,12 @@
     padding-left: 50px;
     padding-right: 50px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 174px;
+    padding-right: 174px;
+    padding-top: 40px;
+  }
 }
 
 .order-form__fieldset {
@@ -41,17 +47,16 @@
 
   @media (min-width: @tablet-width) {
     padding-bottom: 66px;
+    padding-left: 50px;
 
     &--type {
       display: flex;
       padding-top: 48px;
-      padding-left: 50px;
     }
 
     &--color {
       display: flex;
       padding-top: 67px;
-      padding-left: 50px;
       padding-bottom: 0;
       background-color: @background-grey;
     }
@@ -59,7 +64,6 @@
     &--name {
       display: flex;
       padding-top: 75px;
-      padding-left: 50px;
       padding-bottom: 50px;
       padding-right: 50px;
     }
@@ -67,7 +71,6 @@
     &--phone {
       display: flex;
       padding-top: 69px;
-      padding-left: 50px;
       padding-right: 50px;
       padding-bottom: 0;
       background-color: @background-grey;
@@ -75,7 +78,6 @@
 
     &--email {
       display: flex;
-      padding-left: 50px;
       padding-top: 40px;
       padding-right: 50px;
       background-color: @background-grey;
@@ -83,11 +85,15 @@
 
     &--wishes {
       display: flex;
-      padding-left: 50px;
       padding-top: 32px;
       padding-right: 50px;
       padding-bottom: 0;
     }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-left: 60px;
+    padding-top: 56px;
   }
 
   .help-outline(@blue);
