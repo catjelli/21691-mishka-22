@@ -1,6 +1,28 @@
+.site-nav {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    position: absolute;
+    top: 88px;
+  }
+
+  @media (min-width: @desktop-width) {
+    order: -1;
+  }
+}
+
 .site-nav__item {
-  min-height: 55px;
-  padding-top: 22px;
+  min-height: 47px;
+  padding-top: 32px;
+  padding-bottom: 0;
+  padding-left: 47px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0;
+    padding-right: 36px;
+    margin: 0;
+  }
+
+  .help-outline(@blue);
 }
 
 .site-nav__link {
@@ -9,4 +31,8 @@
   font-weight: 700;
   color: @basic-black;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+  }
 }

@@ -1,13 +1,29 @@
 .main-nav {
-  padding-left: 48px;
-  display: none;
+  position: relative;
+  //display: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .help-outline(@green);
 }
 
 .main-nav__list {
   .reset-list ();
+  padding: 0;
 }
 
 .main-nav__toggle {
   width: 20px;
   height: 14px;
+  position: absolute;
+  top: -45px;
+  left: 240px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }

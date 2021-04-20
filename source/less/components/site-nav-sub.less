@@ -1,6 +1,13 @@
 .site-nav-sub {
   .reset-list();
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    position: absolute;
+    bottom: -64px;
+    left: 0;
+  }
 }
 
 .site-nav-sub__link {
