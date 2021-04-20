@@ -7,6 +7,7 @@
 
   @media (min-width: @desktop-width) {
     order: -1;
+    position: static;
   }
 }
 
@@ -19,10 +20,17 @@
   @media (min-width: @tablet-width) {
     padding: 0;
     padding-right: 36px;
-    margin: 0;
   }
 
-  .help-outline(@blue);
+  @media (min-width: @desktop-width) {
+    padding-right: 70px;
+  }
+}
+
+.site-nav__item:last-child {
+  @media (min-width: @desktop-width) {
+    padding-right: 0;
+  }
 }
 
 .site-nav__link {
@@ -34,5 +42,9 @@
 
   @media (min-width: @tablet-width) {
     font-size: 15px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 17px;
   }
 }
