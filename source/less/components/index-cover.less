@@ -1,6 +1,14 @@
 .index-cover {
   height: 489px;
 
+  @media (min-width: @tablet-width) {
+    height: 758px;
+  }
+
+  @media (min-width: @desktop-width) {
+    height: 770px;
+  }
+
   &-interior {
     background-color: @basic-green;
     .cover-button();
@@ -14,7 +22,6 @@
 
 .index-cover__container {
   width: 320px;
-  height: 290px;
   margin: 0 auto;
   padding-top: 52px;
   text-align: center;
@@ -22,15 +29,48 @@
   background-image: url("../img/index-background-small.jpg");
   background-position: center;
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+  }
 }
 
 .index-cover__title {
   padding-bottom: 98px;
+  padding-right: 7px;
+  padding-left: 7px;
   font-style: normal;
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 275px;
+    padding-top: 69px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 258px;
+    padding-top: 60px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.index-cover__nav {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
 }
 
 .index-cover__item {
@@ -41,4 +81,16 @@
   line-height: 24px;
   font-weight: 700;
   color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    width: 298px;
+    height: 104px;
+    padding-left: 36px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 525px;
+  }
 }

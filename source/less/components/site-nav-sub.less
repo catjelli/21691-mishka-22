@@ -1,10 +1,25 @@
 .site-nav-sub {
   .reset-list();
   display: none;
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    position: absolute;
+    top: 124px;
+    left: 0;
+  }
+}
+
+.site-nav-sub__item {
+  padding-right: 66px;
+}
+
+.site-nav-sub__item:last-child {
+  padding: 0;
 }
 
 .site-nav-sub__link {
-  font-size: 17px;
+  font-size: 15px;
   line-height: 24px;
   font-weight: 700;
   color: @basic-black;

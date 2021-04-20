@@ -3,6 +3,19 @@
   margin: 0 auto;
   padding: 37px 30px 0 30px;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto;
+    padding-top: 88px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 699px;
+    padding-top: 126px;
+  }
 }
 
 .about__title {
@@ -11,16 +24,173 @@
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about__list {
   .reset-list();
   padding-bottom: 58px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 668px;
+    height: 385px;
+    padding-top: 96px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 699px;
+  }
 }
 
 .about__item {
+  position: relative;
+  padding: 0;
   padding-top: 83px;
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+
+  &--flower::before {
+    content: "";
+    position: absolute;
+    bottom: 58px;
+    left: 10px;
+    background-image: url("../img/icon/icon-flower.svg");
+    width: 33px;
+    height: 38px;
+  }
+
+  &--banknote::before {
+    content: "";
+    position: absolute;
+    bottom: 68px;
+    left: 2px;
+    background-image: url("../img/icon/icon-banknote.svg");
+    width: 47px;
+    height: 27px;
+  }
+
+  &--heart::before {
+    content: "";
+    position: absolute;
+    bottom: 64px;
+    left: 10px;
+    background-image: url("../img/icon/icon-heart.svg");
+    width: 34px;
+    height: 27px;
+  }
+
+  &--threads::before {
+    content: "";
+    position: absolute;
+    bottom: 58px;
+    left: 4px;
+    background-image: url("../img/icon/icon-threads.svg");
+    width: 35px;
+    height: 34px;
+  }
+
+  &--rocket::before {
+    content: "";
+    position: absolute;
+    bottom: 68px;
+    left: -4px;
+    background-image: url("../img/icon/icon-rocket.svg");
+    width: 55px;
+    height: 23px;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    bottom: 62px;
+    left: 4px;
+    background-image: url("../img/icon/icon-gift.svg");
+    width: 33px;
+    height: 32px;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 334px;
+    padding: 0;
+    padding-bottom: 112px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &:nth-child(3n) {
+      padding: 0;
+    }
+
+    &--flower::before {
+      content: "";
+      position: absolute;
+      top: -55px;
+      left: 9px;
+      background-image: url("../img/icon/icon-flower.svg");
+      width: 33px;
+      height: 38px;
+    }
+
+    &--banknote::before {
+      content: "";
+      position: absolute;
+      top: -54px;
+      left: 2px;
+      background-image: url("../img/icon/icon-banknote.svg");
+      width: 47px;
+      height: 27px;
+    }
+
+    &--heart::before {
+      content: "";
+      position: absolute;
+      bottom: 68px;
+      left: 9px;
+      background-image: url("../img/icon/icon-heart.svg");
+      width: 34px;
+      height: 27px;
+    }
+
+    &--threads::before {
+      content: "";
+      position: absolute;
+      top: -52px;
+      left: 4px;
+      background-image: url("../img/icon/icon-threads.svg");
+      width: 35px;
+      height: 34px;
+    }
+
+    &--rocket::before {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -5px;
+      background-image: url("../img/icon/icon-rocket.svg");
+      width: 55px;
+      height: 23px;
+    }
+
+    &--gift::before {
+      content: "";
+      position: absolute;
+      bottom: 66px;
+      left: 4px;
+      background-image: url("../img/icon/icon-gift.svg");
+      width: 33px;
+      height: 32px;
+    }
+  }
 }

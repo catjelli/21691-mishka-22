@@ -2,6 +2,23 @@
   width: 260px;
   margin: 0 auto;
   padding-top: 24px;
+  padding-bottom: 93px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: 668px;
+    padding: 0 50px 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1050px;
+    height: 455px;
+    padding: 50px 50px 105px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
 }
 
 .production__title {
@@ -12,15 +29,44 @@
   line-height: 24px;
   font-weight: 700;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    padding-top: 40px;
+    padding-left: 108px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 20px;
+    padding: 0;
+    padding-top: 100px;
+    width: 200px;
+    margin-bottom: 25px;
+  }
 }
 
 .production__description {
   margin: 0;
+  margin-bottom: 40px;
   padding-top: 36px;
   padding-left: 35px;
   font-size: 13px;
   line-height: 24px;
-  margin-bottom: 55px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+    margin-bottom: 40px;
+    padding: 25px 10px 0 40px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 50px;
+    padding: 0;
+    padding-right: 48px;
+    width: 240px;
+  }
 }
 
 .production__preview {
@@ -28,12 +74,41 @@
   height: 150px;
   background-image: url("../img/video-preview-small.jpg");
   background-size: cover;
+
+  @media (min-width: @tablet-width) {
+    width: 668px;
+    height: 455px;
+    order: -1;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 682px;
+    margin-right: 80px;
+  }
 }
 
 .production__button {
   .button();
-  padding: 12px 11px;
+  display: block;
+  margin: 0 auto;
+  width: 152px;
+  padding-top: 17px;
+  padding-right: 18px;
+  padding-bottom: 16px;
+  padding-left: 20px;
   font-size: 18px;
   line-height: 16px;
   text-decoration: none;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+    padding: 16px 212px 16px 212px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 144px;
+    margin: 0;
+    padding: 17px 42px;
+  }
 }

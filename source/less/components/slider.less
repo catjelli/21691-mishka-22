@@ -1,5 +1,11 @@
 .slider {
   margin-bottom: 48px;
+
+  @media (min-width: @tablet-width) {
+    position: relative;
+    margin: 0;
+    order: 2;
+  }
 }
 
 .slider__item {
@@ -12,6 +18,15 @@
 
 .slider__controls {
   padding-top: 30px;
+
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+  }
 }
 
 .slider__control {
@@ -20,4 +35,9 @@
   margin: 0;
   background-color: @basic-white;
   border: 1px solid @light-grey;
+
+  @media (min-width: @tablet-width) {
+    width: 50px;
+    height: 26px;
+  }
 }
