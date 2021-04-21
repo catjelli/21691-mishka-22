@@ -15,8 +15,6 @@
     padding-top: 50px;
     padding-bottom: 8px;
   }
-
-  .help-outline(@green);
 }
 
 .main-nav__list {
@@ -25,13 +23,43 @@
 }
 
 .main-nav__toggle {
-  width: 20px;
-  height: 14px;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
   position: absolute;
+  content: "";
+  width: 20px;
+  height: 2px;
   top: -45px;
   left: 240px;
+  background-color: @dark-grey;
+  border: none;
+  box-shadow: 0 6px 0 0 @dark-grey, 0 12px 0 0 @dark-grey;
 
   @media (min-width: @tablet-width) {
+    //display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle::before {
+  position: absolute;
+  content: "";
+  top: -47px;
+  left: 239px;
+  width: 21px;
+  height: 20px;
+  background-image: url("../img/icon/icon-menu-close.svg");
+}
+
+@media (max-width: @mobile-width-only) {
+  .main-nav--closed .main-nav__list {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
     display: none;
   }
 }
