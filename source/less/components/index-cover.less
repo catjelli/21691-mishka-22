@@ -8,16 +8,6 @@
   @media (min-width: @desktop-width) {
     height: 770px;
   }
-
-  &-interior {
-    background-color: @basic-green;
-    .cover-button();
-  }
-
-  &-toys {
-    background-color: @medium-green;
-    .cover-button();
-  }
 }
 
 .index-cover__container {
@@ -74,13 +64,24 @@
 }
 
 .index-cover__item {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 290px;
   height: 79px;
   font-size: 19px;
   line-height: 24px;
   font-weight: 700;
   color: @basic-white;
+
+  &--interior {
+    background-color: @basic-green;
+    .cover-button();
+  }
+
+  &--toys {
+    background-color: @medium-green;
+    .cover-button();
+  }
 
   @media (min-width: @tablet-width) {
     width: 298px;
@@ -92,5 +93,42 @@
 
   @media (min-width: @desktop-width) {
     width: 525px;
+  }
+}
+
+.index-cover__item--interior svg {
+  margin-right: 35px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 37px;
+    margin-top: 5px;
+  }
+}
+
+.index-cover__item--toys svg {
+  margin-right: 27px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 35px;
+    margin-top: 6px;
+  }
+}
+
+.index-cover__item--interior:hover {
+  @media (min-width: @tablet-width) {
+    background-color: @light-button-hover;
+  }
+}
+
+.index-cover__item--toys:hover {
+  @media (min-width: @tablet-width) {
+    background-color: @link-hover;
+  }
+}
+
+.index-cover__item--interior:active svg,
+.index-cover__item--toys:active svg {
+  @media (min-width: @tablet-width) {
+    opacity: 0.3;
   }
 }

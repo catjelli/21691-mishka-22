@@ -1,6 +1,5 @@
 .main-nav {
   position: relative;
-  //display: none;
   display: flex;
   flex-direction: column;
 
@@ -23,32 +22,35 @@
 }
 
 .main-nav__toggle {
+  position: absolute;
+  top: -49px;
+  right: 0;
+  width: 22px;
+  height: 22px;
   padding: 0;
   margin: 0;
   border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 
 .main-nav--closed .main-nav__toggle::before {
   position: absolute;
   content: "";
+  top: 4px;
+  left: 2px;
   width: 20px;
   height: 2px;
-  top: -45px;
-  left: 240px;
   background-color: @dark-grey;
   border: none;
   box-shadow: 0 6px 0 0 @dark-grey, 0 12px 0 0 @dark-grey;
-
-  @media (min-width: @tablet-width) {
-    //display: none;
-  }
 }
 
 .main-nav--opened .main-nav__toggle::before {
   position: absolute;
   content: "";
-  top: -47px;
-  left: 239px;
+  top: 0;
+  left: 0;
   width: 21px;
   height: 20px;
   background-image: url("../img/icon/icon-menu-close.svg");
