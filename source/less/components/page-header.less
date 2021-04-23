@@ -43,12 +43,21 @@
   margin: 0 auto;
   padding-bottom: 14px;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: @tablet-width) {
     position: absolute;
     order: -1;
     width: 113px;
     margin: 0;
     padding: 0;
+    z-index: 2;
   }
 
   @media (min-width: @desktop-width) {

@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  //display: none;
   width: 260px;
   margin: 0 auto;
   padding: 30px 30px 50px;
@@ -103,10 +103,16 @@
   background-color: @basic-green;
   border: none;
 
-  //Не прописаны в стайлгайде состояния для кнопки в модалке
-
   @media (min-width: @tablet-width) {
     padding-left: 129px;
     padding-right: 129px;
+
+    &:hover {
+      background-color: @medium-green;
+    }
+
+    &:active {
+      background-color: @dark-green;
+    }
   }
 }

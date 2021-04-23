@@ -42,7 +42,7 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     width: 668px;
     height: 385px;
@@ -129,8 +129,8 @@
     font-size: 20px;
     line-height: 22px;
 
-    &:nth-child(3n) {
-      padding: 0;
+    &--flower {
+      order: 0;
     }
 
     &--flower::before {
@@ -141,6 +141,11 @@
       background-image: url("../img/icon/icon-flower.svg");
       width: 33px;
       height: 38px;
+      order: -8;
+    }
+
+    &--banknote {
+      order: 2;
     }
 
     &--banknote::before {
@@ -151,16 +156,26 @@
       background-image: url("../img/icon/icon-banknote.svg");
       width: 47px;
       height: 27px;
+      order: -6;
+    }
+
+    &--heart {
+      order: 4;
     }
 
     &--heart::before {
       content: "";
       position: absolute;
-      bottom: 68px;
+      top: -50px;
       left: 9px;
       background-image: url("../img/icon/icon-heart.svg");
       width: 34px;
       height: 27px;
+      order: 4;
+    }
+
+    &--threads {
+      order: 1;
     }
 
     &--threads::before {
@@ -171,6 +186,11 @@
       background-image: url("../img/icon/icon-threads.svg");
       width: 35px;
       height: 34px;
+      order: -7;
+    }
+
+    &--rocket {
+      order: 3;
     }
 
     &--rocket::before {
@@ -181,16 +201,28 @@
       background-image: url("../img/icon/icon-rocket.svg");
       width: 55px;
       height: 23px;
+      order: -5;
+    }
+
+    &--gift {
+      order: 5;
     }
 
     &--gift::before {
       content: "";
       position: absolute;
-      bottom: 66px;
+      top: -55px;
       left: 4px;
       background-image: url("../img/icon/icon-gift.svg");
       width: 33px;
       height: 32px;
+      order: 5;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &:nth-child(1n) {
+      padding-right: 15px;
     }
   }
 }
