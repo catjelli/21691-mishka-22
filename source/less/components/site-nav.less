@@ -8,14 +8,39 @@
   @media (min-width: @desktop-width) {
     order: -1;
     position: static;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      left: 184px;
+      content: "";
+      width: 1px;
+      height: 88px;
+      background-color: rgba(@basic-black, 0.1);
+    }
   }
 }
 
 .site-nav__item {
+  position: relative;
   min-height: 47px;
   padding-top: 32px;
   padding-bottom: 0;
   padding-left: 47px;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    content: "";
+    height: 1px;
+    width: 320px;
+    background-color: @decorative-grey;
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
