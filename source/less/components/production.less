@@ -1,30 +1,42 @@
 .production__container {
   width: 260px;
   margin: 0 auto;
-  padding-top: 24px;
-  padding-bottom: 93px;
+  margin-bottom: 58px;
+  padding-top: 20px;
+  padding-bottom: 32px;
+  box-sizing: border-box;
+  border: 1px solid @light-grey;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(@basic-black, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(@basic-black, 0.1);
+  }
 
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
     width: 668px;
-    padding: 0 50px 110px;
+    padding: 0 0 46px;
   }
 
   @media (min-width: @desktop-width) {
-    width: 1050px;
-    height: 455px;
-    padding: 50px 50px 105px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 1050px;
+    height: 455px;
+    padding: 0;
+    margin-bottom: 100px;
   }
 }
 
 .production__title {
   margin-top: 0;
   margin-bottom: 25px;
-  padding-left: 92px;
+  padding-left: 90px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -32,15 +44,15 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    padding-top: 40px;
-    padding-left: 108px;
+    padding-top: 38px;
+    padding-left: 106px;
     margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     padding: 0;
-    padding-top: 100px;
+    padding-top: 96px;
     width: 200px;
     margin-bottom: 25px;
   }
@@ -63,8 +75,7 @@
 
   @media (min-width: @desktop-width) {
     margin-bottom: 50px;
-    padding: 0;
-    padding-right: 48px;
+    padding: 2px 48px 0 0;
     width: 240px;
   }
 }
@@ -98,6 +109,7 @@
   background-repeat: no-repeat;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     top: 188px;
@@ -133,9 +145,10 @@
   text-decoration: none;
 
   @media (min-width: @tablet-width) {
-    font-size: 17px;
-    padding: 16px 212px 16px 212px;
+    width: 146px;
     margin: 0 auto;
+    padding: 16px 212px 16px 222px;
+    font-size: 17px;
   }
 
   @media (min-width: @desktop-width) {
