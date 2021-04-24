@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию мобильный макет */
+        background-image: url("../pp/form-mobile.jpg");
+      }
+      /* Планшет */
+      @media (min-width: 768px) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("../pp/form-tablet.jpg");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1150px) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url("../pp/form-desktop.jpg");
+        }
+      }
+
+      BODY {
+        opacity: 0.8;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
+    <script src="../node_modules/pixel-glass/script.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Вязание на заказ | Мишка</title>
