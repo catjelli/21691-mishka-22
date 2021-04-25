@@ -3,8 +3,10 @@
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 90px;
+    padding-top: 85px;
   }
+
+  .help-outline(@pink);
 }
 
 .order-form__description {
@@ -13,6 +15,8 @@
   font-size: 13px;
 
   @media (min-width: @tablet-width) {
+    width: 668px;
+    margin: 0 auto 29px;
     font-size: 17px;
     line-height: 30px;
     padding-left: 50px;
@@ -23,9 +27,7 @@
     width: 700px;
     min-height: 90px;
     margin: 0 auto;
-    padding-left: 224px;
-    padding-right: 224px;
-    padding-top: 40px;
+    padding-top: 34px;
   }
 }
 
@@ -48,8 +50,8 @@
 .order-form__fieldset {
   margin: 0 auto;
   padding: 0;
+  padding-bottom: 35px;
   border: none;
-  padding-bottom: 36px;
 
   &--type {
     padding-bottom: 42px;
@@ -64,77 +66,80 @@
   }
 
   @media (min-width: @tablet-width) {
+    width: 668px;
     padding-bottom: 66px;
     padding-left: 50px;
+    padding-right: 50px;
 
     &--type {
       display: flex;
-      padding-top: 48px;
+      padding-top: 52px;
     }
 
     &--color {
       display: flex;
       padding-top: 67px;
-      padding-bottom: 0;
+      padding-bottom: 10px;
     }
 
     &--name {
       display: flex;
-      padding-top: 75px;
+      padding-top: 65px;
       padding-bottom: 50px;
-      padding-right: 50px;
     }
 
     &--phone {
       display: flex;
-      padding-top: 62px;
-      padding-right: 50px;
+      padding-top: 66px;
       padding-bottom: 0;
     }
 
     &--email {
       display: flex;
       padding-top: 36px;
-      padding-right: 50px;
     }
 
     &--wishes {
       display: flex;
-      padding-top: 32px;
-      padding-right: 50px;
+      padding-top: 34px;
       padding-bottom: 0;
     }
   }
 
   @media (min-width: @desktop-width) {
-    padding-left: 114px;
-    width: 1050px;
-    margin: 0 auto;
+    width: 930px;
 
     &--type {
-      padding-top: 54px;
+      padding-top: 50px;
+      padding-right: 0;
+      padding-left: 0;
     }
 
     &--color {
-      padding-top: 62px;
+      padding: 68px 0 8px;
     }
 
     &--name {
       padding-right: 0;
+      padding-left: 0;
     }
 
     &--phone {
-      padding-top: 68px;
+      padding-top: 66px;
       padding-right: 0;
+      padding-left: 0;
     }
 
     &--email {
-      padding-top: 34px;
+      padding-top: 36px;
       padding-right: 0;
+      padding-left: 0;
     }
 
     &--wishes {
       padding-right: 0;
+      padding-left: 0;
+      .help-outline(@blue);
     }
   }
 }
@@ -172,6 +177,10 @@
   }
 
   @media (min-width: @desktop-width) {
+    &--color {
+      margin-right: 152px;
+    }
+
     &--phone {
       margin-right: 80px;
     }
@@ -181,7 +190,7 @@
     }
 
     &--wishes {
-      margin-right: 72px;
+      margin-right: 74px;
     }
   }
 }
@@ -227,7 +236,7 @@
     }
 
     &--color {
-      padding-left: 150px;
+      padding: 0;
     }
 
     &--name {
@@ -260,7 +269,7 @@
   }
 
   &--name {
-    margin-bottom: 24px;
+    margin-bottom: 23px;
   }
 
   &--name:last-child {
@@ -280,8 +289,8 @@
 
     &--color {
       margin-bottom: 59px;
-      min-width: 200px;
-      padding-right: 59px;
+      min-width: 150px;
+      padding-right: 110px;
     }
 
     &--color:nth-child(2n) {
@@ -290,7 +299,6 @@
 
     &--name {
       margin-bottom: 41px;
-      //min-width: 500px;
       width: 500px;
       display: flex;
     }
@@ -298,8 +306,13 @@
 
   @media (min-width: @desktop-width) {
     &--color {
-      min-width: 262px;
+      min-width: 264px;
+      margin-right: 0;
       padding: 0;
+    }
+
+    &--color:nth-child(3n) {
+      min-width: min-content;
     }
 
     &--name {
@@ -310,6 +323,10 @@
 
 .order-form__label {
   margin-right: 23px;
+
+  @media (min-width: @tablet-width) {
+    margin-right: 27px;
+  }
 }
 
 .order-form__input {
@@ -345,9 +362,10 @@
   }
 
   &--wishes {
+    height: 142px;
+    padding-left: 16px;
     box-sizing: border-box;
     border: 2px solid @medium-grey;
-    padding-left: 16px;
   }
 
   &--wishes:hover {
@@ -355,6 +373,8 @@
   }
 
   @media (min-width: @tablet-width) {
+    padding-left: 18px;
+
     &--name {
       padding-top: 0;
       flex-grow: 1;
@@ -381,7 +401,6 @@
 
     &--wishes {
       flex-grow: 1;
-      padding-left: 0;
       max-width: 700px;
     }
 
@@ -396,12 +415,12 @@
     }
 
     &--phone {
-      width: 700px;
+      width: 681px;
       flex-grow: 0;
     }
 
     &--email {
-      width: 700px;
+      width: 681px;
       flex-grow: 0;
     }
 
@@ -413,12 +432,14 @@
 }
 
 .order-form__disclaimer {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-size: 14px;
   line-height: 16px;
   color: @medium-grey;
-  margin-bottom: 30px;
 
   @media (min-width: @tablet-width) {
+    margin-top: 19px;
     font-size: 17px;
     line-height: 30px;
   }
