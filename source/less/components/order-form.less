@@ -1,12 +1,14 @@
 .order-form {
-  padding: 19px 30px 57px;
+  padding: 19px 30px 55px;
 
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 85px;
+    padding-top: 87px;
   }
 
-  .help-outline(@pink);
+  @media (min-width: @desktop-width) {
+    padding-top: 84px;
+  }
 }
 
 .order-form__description {
@@ -63,6 +65,14 @@
 
   &--wishes {
     padding-bottom: 0;
+  }
+
+  &--phone {
+    position: relative;
+  }
+
+  &--email {
+    position: relative;
   }
 
   @media (min-width: @tablet-width) {
@@ -139,12 +149,12 @@
     &--wishes {
       padding-right: 0;
       padding-left: 0;
-      .help-outline(@blue);
     }
   }
 }
 
 .order-form__legend {
+  position: relative;
   padding: 0;
   margin: 0;
   font-size: 17px;
@@ -192,6 +202,51 @@
     &--wishes {
       margin-right: 74px;
     }
+  }
+}
+
+.order-form__legend--wishes::after,
+.order-form__legend--color::after,
+.order-form__legend--type::after {
+  position: absolute;
+  top: 7px;
+  right: 0;
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: @decorative-green;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.order-form__legend--name::after,
+.order-form__legend--phone::after {
+  position: absolute;
+  top: 7px;
+  right: 2px;
+  content: "";
+  width: 200px;
+  height: 1px;
+  background-color: @decorative-green;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.order-form__legend--email::after {
+  position: absolute;
+  top: 7px;
+  right: 2px;
+  content: "";
+  width: 182px;
+  height: 1px;
+  background-color: @decorative-green;
+
+  @media (min-width: @tablet-width) {
+    display: none;
   }
 }
 
