@@ -40,7 +40,10 @@
   <body class="page__body">
     <header class="page-header">
       <a class="logo page-header__logo">
-        <img src="img/mishka-logo-underline.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-medium.svg">
+          <img src="img/mishka-logo-small.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <!--        При закрытом меню добавляется класс main-nav--closed, при открытом main-nav--opened-->
@@ -86,8 +89,8 @@
     </header>
 
     <main class="page-main">
-      <div class="index-cover">
-        <section class="index-cover__container">
+      <section class="index-cover">
+        <div class="index-cover__container">
           <h1 class="index-cover__title">Милые штуки ручной<br>работы для дома</h1>
           <div class="index-cover__nav">
             <a class="index-cover__item index-cover__item--interior">
@@ -110,8 +113,8 @@
 
             </a>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <section class="week-product">
         <div class="week-product__container">
@@ -277,16 +280,16 @@
             <h2 class="modal-form__legend">Выберите размер:</h2>
             <ul class="modal-form__list">
               <li class="modal-form__item">
-                <label class="modal-form__label" for="size-s">S</label>
                 <input class="visually-hidden modal-form__input" type="radio" name="size" value="s" id="size-s" checked>
+                <label class="modal-form__label" for="size-s">S</label>
               </li>
               <li class="modal-form__item">
-                <label class="modal-form__label" for="size-m">M</label>
                 <input class="visually-hidden modal-form__input" type="radio" name="size" value="m" id="size-m">
+                <label class="modal-form__label" for="size-m">M</label>
               </li>
               <li class="modal-form__item">
-                <label class="modal-form__label" for="size-l">L</label>
                 <input class="visually-hidden modal-form__input" type="radio" name="size" value="l" id="size-l">
+                <label class="modal-form__label" for="size-l">L</label>
               </li>
             </ul>
           </fieldset>

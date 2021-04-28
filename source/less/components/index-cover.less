@@ -1,5 +1,6 @@
 .index-cover {
   height: 489px;
+  background-color: @index-background;
 
   @media (min-width: @tablet-width) {
     height: 758px;
@@ -15,10 +16,15 @@
   margin: 0 auto;
   padding-top: 54px;
   text-align: center;
-  background-color: @index-background;
   background-image: url("../img/index-background-small.jpg");
-  background-position: center;
-  background-size: cover;
+  background-position: 50% -18px;
+  background-size: 100%;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index-background-small@2x.jpg");
+    background-position: 50% -18px;
+    background-size: 100%;
+  }
 
   @media (min-width: @tablet-width) {
     width: 668px;
@@ -26,10 +32,28 @@
     padding-top: 52px;
     padding-left: 50px;
     padding-right: 50px;
+    background-image: url("../img/index-background-medium.jpg");
+    background-position: 50% top;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-medium@2x.jpg");
+      background-position: 50% top;
+      background-size: 100%;
+    }
   }
 
   @media (min-width: @desktop-width) {
     width: 1050px;
+    background-image: url("../img/index-background-large.jpg");
+    background-position: 50% top;
+    background-size: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/index-background-large@2x.jpg");
+      background-position: 50% top;
+      background-size: 100%;
+    }
   }
 }
 
