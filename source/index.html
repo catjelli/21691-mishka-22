@@ -41,8 +41,9 @@
     <header class="page-header">
       <a class="logo page-header__logo">
         <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-large.svg">
           <source media="(min-width: 768px)" srcset="img/mishka-logo-medium.svg">
-          <img src="img/mishka-logo-small.svg" width="86" height="35" alt="Логотип магазина Мишка">
+          <img class="page-header__logo-img" src="img/mishka-logo-small.svg" width="86" height="35" alt="Логотип магазина Мишка">
         </picture>
       </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
@@ -140,7 +141,13 @@
               </tr>
             </table>
           </div>
-          <img class="week-product__img" src="img/triple-set-small.jpg" width="260" height="315" alt="Набор из трёх вязаных корзинок разных цветов.">
+          <div class="week-product__img-container">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-large.jpg 1x, img/triple-set-large@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-medium.jpg 1x, img/triple-set-medium@2x.jpg 2x">
+              <img class="week-product__img" src="img/triple-set-small.jpg" srcset="img/triple-set-small@2x.jpg" width="260" height="315" alt="Набор из трёх вязаных корзинок разных цветов.">
+            </picture>
+          </div>
           <div class="week-product__price-container">
             <p class="week-product__price">Цена: 990 руб.</p>
             <a class="week-product__button" href="#!">Заказать</a>

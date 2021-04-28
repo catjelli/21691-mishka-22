@@ -25,7 +25,7 @@
       }
 
       BODY {
-        opacity: 0.8;
+        opacity: 1;
       }
     </style>
 
@@ -41,7 +41,11 @@
   <body class="page__body">
     <header class="page-header">
       <a class="logo page-header__logo" href="index.html" aria-label="Переход на главную страницу">
-        <img src="img/mishka-logo-underline.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-large.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-medium.svg">
+          <img class="page-header__logo-img" src="img/mishka-logo-small.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <!--        При закрытом меню добавляется класс main-nav--closed, при открытом main-nav--opened-->
@@ -94,7 +98,11 @@
             <li class="catalog__item">
               <article class="product">
                 <a class="product__image-link" href="#!">
-                  <img src="img/rabbit-small.jpg" width="260" height="195" alt="Голубой вязаный зайчик">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/rabbit-large.jpg 1x, img/rabbit-large@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/rabbit-medium.jpg 1x, img/rabbit-medium@2x.jpg 2x">
+                    <img class="product-image" src="img/rabbit-small.jpg" srcset="img/rabbit-small@2x.jpg" width="260" height="195" alt="Голубой вязаный зайчик">
+                  </picture>
                 </a>
                 <div class="product__description-container">
                   <a class="product__link" href="#!">Зайчик-попрыгайчик</a>
@@ -113,7 +121,11 @@
             <li class="catalog__item">
               <article class="product">
                 <a class="product__image-link" href="#!">
-                  <img src="img/basket-small.jpg" width="260" height="195" alt="Бело-розовая вязаная корзинка для белья">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/basket-large.jpg 1x, img/basket-large@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/basket-medium.jpg 1x, img/basket-medium@2x.jpg 2x">
+                    <img class="product-image" src="img/basket-small.jpg" srcset="img/basket-small@2x.jpg" width="260" height="195" alt="Бело-розовая вязаная корзинка для белья">
+                  </picture>
                 </a>
                 <div class="product__description-container">
                   <a class="product__link" href="#!">Корзинка для белья</a>
@@ -132,9 +144,13 @@
             <li class="catalog__item">
               <article class="product">
                 <a class="product__image-link" href="#!">
-                  <img src="img/big-basket-small.jpg" width="260" height="195" alt="Большая бело-зелёная вязаная корзина для игрушек">
+                  <picture>
+                    <source media="(min-width: 1150px)" srcset="img/big-basket-large.jpg 1x, img/big-basket-large@2x.jpg 2x">
+                    <source media="(min-width: 768px)" srcset="img/big-basket-medium.jpg 1x, img/big-basket-medium@2x.jpg 2x">
+                    <img class="product-image" src="img/big-basket-small.jpg" srcset="img/big-basket-small@2x.jpg" width="260" height="195" alt="Большая бело-зелёная вязаная корзина для игрушек">
+                  </picture>
                 </a>
-                <div class="product__description-container">
+                <div class="product__description-container product__description-container--basket">
                   <a class="product__link" href="#!">Большая корзинка для&nbsp;игрушек</a>
                   <p class="product__description">Диаметр 30 см, высота 30 см</p>
                 </div>

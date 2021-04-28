@@ -87,15 +87,29 @@
   background-image: url("../img/video-preview-small.jpg");
   background-size: cover;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-preview-small@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     width: 668px;
     height: 455px;
     order: -1;
+    background-image: url("../img/video-preview-medium.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-preview-medium@2x.jpg");
   }
 
   @media (min-width: @desktop-width) {
     width: 682px;
     margin-right: 80px;
+    background-image: url("../img/video-preview-large.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/video-preview-large@2x.jpg");
   }
 }
 

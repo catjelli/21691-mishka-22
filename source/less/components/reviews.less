@@ -10,6 +10,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    padding-top: 4px;
     padding-bottom: 80px;
   }
 }
@@ -27,6 +28,13 @@
     background-image: url("../img/reviews-background.jpg");
     background-position: top left;
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/reviews-background@2x.jpg");
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: 45%;
+    }
   }
 
   @media (min-width: @desktop-width) {
@@ -34,12 +42,16 @@
     padding-left: 225px;
     padding-bottom: 100px;
     background-position: top left 6%;
+
+    @media (min-resolution: 2dppx) {
+      background-size: 31%;
+    }
   }
 }
 
 .reviews__title {
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
   font-size: 25px;
   line-height: 30px;
   font-weight: 700;
@@ -53,6 +65,7 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-bottom: 36px;
     font-size: 53px;
     line-height: 57px;
   }
@@ -79,7 +92,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    margin-bottom: 40px;
+    margin-bottom: 42px;
   }
 }
 

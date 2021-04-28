@@ -40,7 +40,11 @@
   <body class="page__body">
     <header class="page-header">
       <a class="logo page-header__logo" href="index.html" aria-label="Переход на главную страницу">
-        <img src="img/mishka-logo-underline.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/mishka-logo-large.svg">
+          <source media="(min-width: 768px)" srcset="img/mishka-logo-medium.svg">
+          <img class="page-header__logo-img" src="img/mishka-logo-small.svg" width="86" height="35" alt="Логотип магазина Мишка">
+        </picture>
       </a>
       <nav class="main-nav main-nav--opened main-nav--nojs">
         <!--        При закрытом меню добавляется класс main-nav--closed, при открытом main-nav--opened-->
