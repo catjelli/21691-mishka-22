@@ -377,6 +377,7 @@
 }
 
 .order-form__label {
+  position: relative;
   margin-right: 23px;
 
   @media (min-width: @tablet-width) {
@@ -405,6 +406,11 @@
 
   &:hover {
     border-bottom: 2px solid @decorative-green;
+  }
+
+  &:hover + .icon-phone path,
+  &:hover + .icon-mail path {
+    fill: @decorative-green;
   }
 
   &--phone {

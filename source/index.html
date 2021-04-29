@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="ru" class="page">
   <head>
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* По умолчанию мобильный макет */
-        background-image: url("../pp/index-mobile.jpg");
-      }
-      /* Планшет */
-      @media (min-width: 768px) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url("../pp/index-tablet.jpg");
-        }
-      }
-      /* Десктоп */
-      @media (min-width: 1150px) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url("../pp/index-desktop.jpg");
-        }
-      }
+<!--    &lt;!&ndash; Pixel Glass &ndash;&gt;-->
+<!--    <style>-->
+<!--      HTML {-->
+<!--        background-repeat: no-repeat;-->
+<!--        background-position: 50% 0;-->
+<!--        /* По умолчанию мобильный макет */-->
+<!--        background-image: url("../pp/index-mobile.jpg");-->
+<!--      }-->
+<!--      /* Планшет */-->
+<!--      @media (min-width: 768px) {-->
+<!--        HTML {-->
+<!--          /* Планшетный макет */-->
+<!--          background-image: url("../pp/index-tablet.jpg");-->
+<!--        }-->
+<!--      }-->
+<!--      /* Десктоп */-->
+<!--      @media (min-width: 1150px) {-->
+<!--        HTML {-->
+<!--          /* Десктопный макет */-->
+<!--          background-image: url("../pp/index-desktop.jpg");-->
+<!--        }-->
+<!--      }-->
 
-      BODY {
-        opacity: 0.8;
-      }
-    </style>
+<!--      BODY {-->
+<!--        opacity: 0.8;-->
+<!--      }-->
+<!--    </style>-->
 
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
     <script src="../node_modules/pixel-glass/script.js"></script>
@@ -143,8 +143,11 @@
           </div>
           <div class="week-product__img-container">
             <picture>
+              <source media="(min-width: 1150px)" srcset="img/triple-set-large.webp 1x, img/triple-set-large@2x.webp 2x" type="image/webp">
               <source media="(min-width: 1150px)" srcset="img/triple-set-large.jpg 1x, img/triple-set-large@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/triple-set-medium.webp 1x, img/triple-set-medium@2x.webp 2x" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/triple-set-medium.jpg 1x, img/triple-set-medium@2x.jpg 2x">
+              <source media="(max-width: 767px)" srcset="img/triple-set-small.webp 1x, img/triple-set-small@2x.webp 2x" type="image/webp">
               <img class="week-product__img" src="img/triple-set-small.jpg" srcset="img/triple-set-small@2x.jpg" width="260" height="315" alt="Набор из трёх вязаных корзинок разных цветов.">
             </picture>
           </div>
