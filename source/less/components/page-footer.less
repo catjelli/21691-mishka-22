@@ -5,7 +5,7 @@
 .page-footer__container {
   width: 260px;
   margin: 0 auto;
-  padding: 24px 30px 23px;
+  padding: 26px 30px 10px;
 
   @media (min-width: @tablet-width) {
     display: flex;
@@ -25,6 +25,11 @@
 
   @media (min-width: @tablet-width) {
     display: block;
+    cursor: pointer;
+
+    &:hover path {
+      fill: @link-hover;
+    }
   }
 }
 
@@ -32,19 +37,36 @@
   .reset-list();
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 0;
   margin-bottom: 40px;
   padding: 0 60px;
 
   @media (min-width: @tablet-width) {
-    display: flex;
-    justify-content: space-between;
-    width: 140px;
+    flex-wrap: wrap;
+    min-width: 140px;
+    padding-top: 3px;
   }
 
   @media (min-width: @desktop-width) {
     padding-top: 2px;
   }
+}
+
+.social__item {
+  margin-right: 20px;
+}
+
+.social__item:last-child {
+  margin: 0;
+}
+
+.social__link:hover path {
+  fill: @link-hover;
+}
+
+.social__link:active path {
+  opacity: 0.3;
 }
 
 .page-footer__copyright {
@@ -60,8 +82,10 @@
 
 .copyright__title {
   margin: 0;
+  padding-top: 4px;
 
   @media (min-width: @tablet-width) {
+    padding-top: 6px;
     padding-right: 28px;
   }
 

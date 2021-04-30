@@ -7,11 +7,11 @@
 
   @media (min-width: @desktop-width) {
     margin: 0;
+    justify-self: right;
   }
 }
 
-.user-nav__search,
-.user-nav__cart {
+.user-nav__link {
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
@@ -21,40 +21,103 @@
   margin: 0;
 }
 
-.user-nav__search svg,
+.user-nav__search svg {
+  padding-top: 3px;
+  padding-right: 27px;
+  padding-left: 2px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 4px;
+  }
+}
+
 .user-nav__cart svg {
+  padding-top: 3px;
   padding-right: 27px;
 
   @media (min-width: @tablet-width) {
-    padding: 0;
+    padding-top: 2px;
+    padding-right: 0;
   }
 }
 
 .user-nav__search {
+  position: relative;
+
   @media (min-width: @tablet-width) {
     padding-left: 33px;
-    padding-right: 33px;
-  }
+    padding-right: 32px;
 
-  @media (min-width: @desktop-width) {
-    //padding: 0;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -34px;
+      content: "";
+      width: 1px;
+      height: 88px;
+      background-color: rgba(@basic-black, 0.1);
+
+      @media (min-width: @desktop-width) {
+        left: -2px;
+      }
+    }
   }
 }
 
 .user-nav__cart {
-  @media (min-width: @tablet-width) {
-    padding-left: 31px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: -24px;
+    left: -30px;
+    content: "";
+    height: 1px;
+    width: 320px;
+    background-color: rgba(@basic-black, 0.1);
+
+    @media (min-width: @tablet-width) {
+      width: 1px;
+      height: 88px;
+      left: 0;
+      top: -34px;
+    }
+
+    @media (min-width: @desktop-width) {
+      left: -2px;
+    }
   }
 
-  @media (min-width: @desktop-width) {
-    //padding: 0;
+  @media (min-width: @tablet-width) {
+    padding-left: 30px;
+    padding-right: 2px;
   }
 }
 
 .user-nav__item {
+  position: relative;
   min-height: 47px;
   padding-top: 32px;
   padding-bottom: 0;
+
+  &::before {
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    content: "";
+    height: 1px;
+    width: 320px;
+    background-color: rgba(@basic-black, 0.1);
+
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -63,9 +126,8 @@
 
   @media (min-width: @desktop-width) {
     padding: 0;
+    margin: 0;
   }
-
-  .help-outline(@red);
 }
 
 .user-nav__text {
@@ -81,4 +143,17 @@
       padding-left: 30px;
     }
   }
+}
+
+.user-nav__link:hover .user-nav__text {
+  opacity: 0.6;
+}
+
+.user-nav__link:hover path {
+  fill: @basic-green;
+  opacity: 1;
+}
+
+.user-nav__link:active {
+  opacity: 0.3;
 }

@@ -1,4 +1,5 @@
 .modal {
+  display: none;
   width: 260px;
   margin: 0 auto;
   padding: 30px 30px 50px;
@@ -58,25 +59,35 @@
 }
 
 .modal-form__item {
-  display: block;
   margin: 0;
   padding: 0;
-  padding-top: 12px;
   width: 82px;
-  height: 52px;
-  box-sizing: border-box;
-  border: 2px solid @medium-grey;
-  text-align: center;
-
-  & label {
-    font-size: 17px;
-    line-height: 16px;
-    font-weight: 700;
-  }
 
   @media (min-width: @tablet-width) {
     width: 112px;
   }
+}
+
+.modal-form__label {
+  display: block;
+  box-sizing: border-box;
+  width: auto;
+  height: 52px;
+  padding-top: 17px;
+  text-align: center;
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  border: 2px solid rgba(@medium-grey, 0.2);
+
+  &:hover {
+    border: 2px solid rgba(@medium-grey, 0.3);
+  }
+}
+
+.modal-form__input:checked + .modal-form__label {
+  border: 2px solid @decorative-green;
 }
 
 .modal__button {
@@ -89,9 +100,18 @@
   color: @basic-white;
   background-color: @basic-green;
   border: none;
+  cursor: pointer;
 
   @media (min-width: @tablet-width) {
     padding-left: 129px;
     padding-right: 129px;
+
+    &:hover {
+      background-color: @medium-green;
+    }
+
+    &:active {
+      background-color: @dark-green;
+    }
   }
 }

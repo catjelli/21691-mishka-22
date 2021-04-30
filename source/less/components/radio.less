@@ -1,0 +1,71 @@
+.radio + label::before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: -61px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid @medium-grey;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: -16px;
+    left: -77px;
+    width: 47px;
+    height: 47px;
+  }
+}
+
+.radio:checked + label::after {
+  content: "";
+  position: absolute;
+  bottom: 11px;
+  left: -49px;
+  width: 17px;
+  height: 17px;
+  background-color: @decorative-green;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: 0;
+    left: -61px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.radio--toys + label::before {
+  position: absolute;
+  content: "";
+  top: -13px;
+  left: -61px;
+  width: 37px;
+  height: 37px;
+  border: 2px solid @medium-grey;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: -14px;
+    left: -77px;
+    width: 47px;
+    height: 47px;
+  }
+}
+
+.radio--toys:checked + label::after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: -49px;
+  width: 17px;
+  height: 17px;
+  background-color: @decorative-green;
+  border-radius: 50%;
+
+  @media (min-width: @tablet-width) {
+    top: 2px;
+    left: -61px;
+    width: 20px;
+    height: 20px;
+  }
+}
