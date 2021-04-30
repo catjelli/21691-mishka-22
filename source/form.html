@@ -2,32 +2,32 @@
 <html lang="ru" class="page">
   <head>
     <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* По умолчанию мобильный макет */
-        background-image: url("../pp/form-mobile.jpg");
-      }
-      /* Планшет */
-      @media (min-width: 768px) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url("../pp/form-tablet.jpg");
-        }
-      }
-      /* Десктоп */
-      @media (min-width: 1150px) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url("../pp/form-desktop.jpg");
-        }
-      }
+<!--    <style>-->
+<!--      HTML {-->
+<!--        background-repeat: no-repeat;-->
+<!--        background-position: 50% 0;-->
+<!--        /* По умолчанию мобильный макет */-->
+<!--        background-image: url("../pp/form-mobile.jpg");-->
+<!--      }-->
+<!--      /* Планшет */-->
+<!--      @media (min-width: 768px) {-->
+<!--        HTML {-->
+<!--          /* Планшетный макет */-->
+<!--          background-image: url("../pp/form-tablet.jpg");-->
+<!--        }-->
+<!--      }-->
+<!--      /* Десктоп */-->
+<!--      @media (min-width: 1150px) {-->
+<!--        HTML {-->
+<!--          /* Десктопный макет */-->
+<!--          background-image: url("../pp/form-desktop.jpg");-->
+<!--        }-->
+<!--      }-->
 
-      BODY {
-        opacity: 0.8;
-      }
-    </style>
+<!--      BODY {-->
+<!--        opacity: 0.8;-->
+<!--      }-->
+<!--    </style>-->
 
     <link rel="stylesheet" href="../node_modules/pixel-glass/styles.css">
     <script src="../node_modules/pixel-glass/script.js"></script>
@@ -100,11 +100,11 @@
             <h2 class="order-form__legend order-form__legend--type">Тип</h2>
             <ul class="order-form__list order-form__list--type">
               <li class="order-form__item order-form__item--type">
-                <input class="order-form__radio radio radio--interior visually-hidden" type="radio" name="type-of-product" value="interior-accessory" id="interior-accessory">
+                <input class="radio radio--interior visually-hidden" type="radio" name="type-of-product" value="interior-accessory" id="interior-accessory" checked>
                 <label class="order-form__label order-form__label--type" for="interior-accessory">Аксессуар для интерьера</label>
               </li>
               <li class="order-form__item order-form__item--type">
-                <input class="order-form__radio radio radio--toys visually-hidden" type="radio" name="type-of-product" value="toy" id="toy">
+                <input class="radio radio--toys visually-hidden" type="radio" name="type-of-product" value="toy" id="toy">
                 <label class="order-form__label" for="toy">Детская игрушка</label>
               </li>
             </ul>
@@ -114,27 +114,27 @@
               <h2 class="order-form__legend order-form__legend--color">Цвет</h2>
               <ul class="order-form__list order-form__list--color">
                 <li class="order-form__item order-form__item--color">
-                  <input class="visually-hidden" type="checkbox" name="white" id="white" checked>
+                  <input class="checkbox visually-hidden" type="checkbox" name="white" id="white" checked disabled>
                   <label class="order-form__label" for="white">Белый</label>
                 </li>
                 <li class="order-form__item order-form__item--color">
-                  <input class="visually-hidden" type="checkbox" name="grey" id="grey" checked>
+                  <input class="checkbox visually-hidden" type="checkbox" name="grey" id="grey" checked>
                   <label class="order-form__label" for="grey">Серый</label>
                 </li>
                 <li class="order-form__item order-form__item--color">
-                  <input class="visually-hidden" type="checkbox" name="tiffany" id="tiffany">
+                  <input class="checkbox visually-hidden" type="checkbox" name="tiffany" id="tiffany">
                   <label class="order-form__label" for="tiffany">«Тиффани»</label>
                 </li>
                 <li class="order-form__item order-form__item--color">
-                  <input class="visually-hidden" type="checkbox" name="black" id="black">
+                  <input class="checkbox visually-hidden" type="checkbox" name="black" id="black">
                   <label class="order-form__label" for="black">Чёрный</label>
                 </li>
                 <li class="order-form__item order-form__item--color">
-                  <input class="visually-hidden" type="checkbox" name="pink" id="pink">
+                  <input class="checkbox visually-hidden" type="checkbox" name="pink" id="pink">
                   <label class="order-form__label" for="pink">Розовый</label>
                 </li>
                 <li class="order-form__item order-form__item--color">
-                  <input class="visually-hidden" type="checkbox" name="orange" id="orange">
+                  <input class="checkbox visually-hidden" type="checkbox" name="orange" id="orange">
                   <label class="order-form__label" for="orange">Оранжевый</label>
                 </li>
               </ul>
