@@ -45,7 +45,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 668px;
-    height: 385px;
+    min-height: 385px;
     padding-top: 96px;
   }
 
@@ -224,5 +224,12 @@
     &:nth-child(1n) {
       padding-right: 15px;
     }
+  }
+}
+
+.about__item--heart,
+.about__item--gift {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 30px;
   }
 }
