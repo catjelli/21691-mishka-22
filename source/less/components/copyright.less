@@ -1,8 +1,23 @@
 .copyright__title {
+  margin: 0;
+  padding-top: 4px;
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
   color: @basic-black;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 6px;
+    padding-right: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 5px;
+  }
+}
+
+.copyright__link path {
+  fill: @basic-green;
 }
 
 .copyright__link:hover path {
