@@ -1,7 +1,30 @@
+.week-product {
+  @media (min-width: @tablet-width) {
+    position: relative;
+  }
+}
+
+.week-product::before {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: -22px;
+    left: 0;
+    height: 24px;
+    width: 100%;
+    background-image: url("../img/zigzag-fill-medium.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -24px;
+    background-image: url("../img/zigzag-fill-large.svg");
+  }
+}
+
 .week-product__container {
   width: 260px;
   margin: 0 auto;
-  padding: 34px 30px 36px 30px;
+  padding: 31px 30px 36px 30px;
 
   @media (min-width: @tablet-width) {
     position: relative;
@@ -14,7 +37,7 @@
 
   @media (min-width: @desktop-width) {
     width: 1050px;
-    padding-top: 108px;
+    padding-top: 121px;
   }
 }
 
@@ -115,7 +138,7 @@
 
   @media (min-width: @tablet-width) {
     width: 292px;
-    margin-bottom: 57px;
+    margin-bottom: 55px;
     padding-top: 20px;
     font-size: 15px;
     line-height: 20px;
@@ -123,7 +146,7 @@
 
   @media (min-width: @desktop-width) {
     padding-top: 32px;
-    margin-bottom: 110px;
+    margin-bottom: 108px;
   }
 }
 
@@ -146,7 +169,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    top: 48px;
+    top: 58px;
   }
 }
 
@@ -166,7 +189,8 @@
 }
 
 .week-product__price {
-  margin-bottom: 26px;
+  padding-top: 2px;
+  margin-bottom: 24px;
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;

@@ -5,7 +5,7 @@
 
   @media (min-width: @tablet-width) {
     width: auto;
-    margin: 0 auto 55px;
+    margin: 0 auto 53px;
     padding: 0;
   }
 
@@ -15,7 +15,7 @@
   }
 }
 
-.contacts-wrapper {
+.contacts__wrapper {
   @media (min-width: @desktop-width) {
     display: flex;
     flex-wrap: wrap;
@@ -26,11 +26,12 @@
   }
 }
 
-.contacts-container {
+.contacts__container {
   width: 260px;
-  padding: 58px 30px 32px;
+  padding: 56px 30px 32px;
 
   @media (min-width: @tablet-width) {
+    position: relative;
     width: 668px;
     margin: 0 auto;
     padding: 80px 50px 20px;
@@ -45,6 +46,23 @@
     padding-left: 175px;
     padding-top: 80px;
     margin: 0;
+  }
+}
+
+.contacts__container::after {
+  @media (min-width: @tablet-width) {
+    content: "";
+    position: absolute;
+    top: 58px;
+    right: 53px;
+    width: 47px;
+    height: 81px;
+    background-image: url("../img/flag.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: 62px;
+    left: 63px;
   }
 }
 
@@ -108,6 +126,10 @@
   @media (min-width: @desktop-width) {
     width: auto;
     padding-bottom: 26px;
+
+    &--address {
+      padding-top: 4px;
+    }
   }
 }
 
@@ -154,7 +176,7 @@
 
   @media (min-width: @tablet-width) {
     width: 100%;
-    margin-bottom: 46px;
+    margin-bottom: 49px;
   }
 
   @media (min-width: @desktop-width) {
