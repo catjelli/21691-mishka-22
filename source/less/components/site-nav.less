@@ -28,20 +28,20 @@
   padding-top: 30px;
   padding-bottom: 0;
   padding-left: 47px;
-
-  &::before {
-    position: absolute;
-    top: 3px;
-    left: -30px;
-    content: "";
-    height: 1px;
-    width: 320px;
-    background-color: @decorative-grey;
-
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-  }
+  //
+  //&::before {
+  //  position: absolute;
+  //  top: 3px;
+  //  left: -30px;
+  //  content: "";
+  //  height: 1px;
+  //  width: 320px;
+  //  background-color: @decorative-grey;
+  //
+  //  @media (min-width: @tablet-width) {
+  //    display: none;
+  //  }
+  //}
 
   @media (min-width: @tablet-width) {
     padding: 0;
@@ -78,6 +78,11 @@
 
 .site-nav__link:hover {
   opacity: 0.6;
+}
+
+.site-nav__link:focus-visible {
+  outline: 2px solid rgba(@basic-green, 0.7);
+  outline-offset: 1px;
 }
 
 .site-nav__link:active {

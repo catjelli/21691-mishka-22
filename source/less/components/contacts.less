@@ -160,6 +160,11 @@
   &:hover {
     color: @link-hover;
   }
+
+  &:focus-visible {
+    outline: 2px solid rgba(@basic-green, 0.7);
+    outline-offset: 1px;
+  }
 }
 
 .contacts__link:hover.contacts__link::after {
