@@ -37,22 +37,20 @@
   border: 1px solid @light-grey;
   cursor: pointer;
 
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:focus-visible {
-    outline: 2px solid rgba(@basic-green, 0.7);
-    outline-offset: 1px;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
-
   @media (min-width: @tablet-width) {
-    //width: 52px;
-    //height: 28px;
     border: none;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:focus-visible {
+      outline: 2px solid rgba(@basic-green, 0.7);
+      outline-offset: 1px;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
