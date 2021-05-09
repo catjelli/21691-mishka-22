@@ -38,8 +38,5 @@
   ],
   "engines": {
     "node": "14.15.0"
-  },
-  "dependencies": {
-    "csscomb": "^4.3.0"
   }
 }
