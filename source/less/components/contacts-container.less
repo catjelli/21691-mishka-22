@@ -1,0 +1,26 @@
+.contacts-container {
+  position: relative;
+}
+
+.contacts-container::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 6px;
+  background-image: url("../img/zigzag-border-small.svg");
+  //background-repeat: no-repeat;
+
+  @media (min-width: @tablet-width) {
+    top: -7px;
+    height: 17px;
+    background-image: url("../img/zigzag-border-medium.svg");
+  }
+
+  @media (min-width: @desktop-width) {
+    top: -20px;
+    height: 23px;
+    background-image: url("../img/zigzag-border-large.svg");
+  }
+}

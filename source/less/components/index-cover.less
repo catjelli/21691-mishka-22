@@ -1,5 +1,5 @@
 .index-cover {
-  height: 489px;
+  //height: 489px;
   background-color: @index-background;
 
   @media (min-width: @tablet-width) {
@@ -7,7 +7,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    height: 770px;
+    //height: 770px;
   }
 }
 
@@ -97,6 +97,7 @@
   line-height: 24px;
   font-weight: 700;
   color: @basic-white;
+  text-decoration: none;
 
   &--interior {
     background-color: @basic-green;
@@ -123,6 +124,8 @@
 
 .index-cover__item--interior svg {
   margin-right: 35px;
+  fill: @dark-green;
+  opacity: 0.5;
 
   @media (min-width: @tablet-width) {
     margin-right: 37px;
@@ -132,6 +135,8 @@
 
 .index-cover__item--toys svg {
   margin-right: 27px;
+  fill: @dark-green;
+  opacity: 0.5;
 
   @media (min-width: @tablet-width) {
     margin-right: 35px;
@@ -155,6 +160,18 @@
     background-color: @link-hover;
     cursor: pointer;
   }
+}
+
+.index-cover__item--toys:hover svg,
+.index-cover__item--interior:hover svg {
+  @media (min-width: @tablet-width) {
+    opacity: 0.7;
+  }
+}
+
+.index-cover__item:focus-visible {
+  outline: 2px solid rgba(@basic-green, 0.7);
+  outline-offset: 1px;
 }
 
 .index-cover__item--interior:active svg,

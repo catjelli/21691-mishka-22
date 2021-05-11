@@ -69,3 +69,11 @@
     height: 20px;
   }
 }
+
+.radio:hover + label::before {
+  border: 2px solid @decorative-green;
+}
+
+.radio:active + label::before {
+  border: 2px solid rgba(@medium-grey, 0.3);
+}
