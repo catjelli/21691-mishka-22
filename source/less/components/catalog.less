@@ -26,8 +26,9 @@
 
   @media (min-width: @desktop-width) {
     display: flex;
-    justify-content: space-between;
-    padding-bottom: 56px;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    //padding-bottom: 56px;
   }
 }
 
@@ -39,6 +40,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    margin-right: 51px;
+    margin-bottom: 55px;
     padding: 0;
+  }
+}
+
+.catalog__item:nth-child(3n) {
+  @media (min-width: @desktop-width) {
+    margin-right: 0;
   }
 }

@@ -42,6 +42,11 @@
   border: 2px solid @decorative-green;
 }
 
+.checkbox:focus-visible + .order-form__label::before {
+  outline: 2px solid rgba(@basic-green, 0.7);
+  outline-offset: 1px;
+}
+
 .checkbox:active + label::before {
   border: 2px solid rgba(@medium-grey, 0.3);
 }
