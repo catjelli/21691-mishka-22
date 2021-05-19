@@ -1,12 +1,32 @@
-.main-nav {
+.main-nav.main-nav--nojs {
   position: relative;
+  top: 0;
   display: flex;
   flex-direction: column;
 
   @media (min-width: @tablet-width) {
+    position: static;
+    display: block;
+  }
+}
+
+.main-nav {
+  position: absolute;
+  top: 79px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: calc(100vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: @basic-white;
+
+  @media (min-width: @tablet-width) {
+    position: static;
     flex-direction: row;
     flex-wrap: wrap;
     padding-bottom: 2px;
+    transform: none;
   }
 
   @media (min-width: @desktop-width) {
@@ -22,10 +42,14 @@
   padding: 0;
 }
 
+.main-nav__toggle-container {
+  position: relative;
+}
+
 .main-nav__toggle {
   position: absolute;
-  top: -49px;
-  right: 0;
+  top: -48px;
+  left: 110px;
   width: 22px;
   height: 22px;
   padding: 0;
@@ -33,13 +57,17 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav--closed .main-nav__toggle::before {
   position: absolute;
   content: "";
   top: 4px;
-  left: 2px;
+  right: 0;
   width: 20px;
   height: 2px;
   background-color: @dark-grey;
@@ -51,7 +79,7 @@
   position: absolute;
   content: "";
   top: 0;
-  left: 0;
+  right: 0;
   width: 21px;
   height: 20px;
   background-image: url("../img/icon/icon-menu-close.svg");

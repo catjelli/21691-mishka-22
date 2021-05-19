@@ -214,31 +214,29 @@
 
     <!--Модальное окно-->
     <div class="modal-overlay"></div>
-    <div class="modal-wrapper">
-      <section class="modal">
-        <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
-        <form class="modal-form">
-          <fieldset class="modal-form__fieldset">
-            <h2 class="modal-form__legend">Выберите размер:</h2>
-            <ul class="modal-form__list">
-              <li class="modal-form__item">
-                <input class="visually-hidden modal-form__input" type="radio" name="size" value="s" id="size-s" checked>
-                <label class="modal-form__label" for="size-s">S</label>
-              </li>
-              <li class="modal-form__item">
-                <input class="visually-hidden modal-form__input" type="radio" name="size" value="m" id="size-m">
-                <label class="modal-form__label" for="size-m">M</label>
-              </li>
-              <li class="modal-form__item">
-                <input class="visually-hidden modal-form__input" type="radio" name="size" value="l" id="size-l">
-                <label class="modal-form__label" for="size-l">L</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button class="modal__button" type="button">Добавить</button>
-        </form>
-      </section>
-    </div>
+    <section class="modal">
+      <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
+      <form class="modal-form">
+        <fieldset class="modal-form__fieldset">
+          <h2 class="modal-form__legend">Выберите размер:</h2>
+          <ul class="modal-form__list">
+            <li class="modal-form__item">
+              <input class="modal-form__input visually-hidden" type="radio" name="size" value="s" id="size-s" checked>
+              <label class="modal-form__label" for="size-s">S</label>
+            </li>
+            <li class="modal-form__item">
+              <input class="modal-form__input visually-hidden" type="radio" name="size" value="m" id="size-m">
+              <label class="modal-form__label" for="size-m">M</label>
+            </li>
+            <li class="modal-form__item">
+              <input class="modal-form__input visually-hidden" type="radio" name="size" value="l" id="size-l">
+              <label class="modal-form__label" for="size-l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="modal__button" type="button">Добавить</button>
+      </form>
+    </section>
 
     <script src="../js/script.min.js"></script>
 
