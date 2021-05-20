@@ -14,7 +14,6 @@
   @media (min-width: @desktop-width) {
     order: -1;
     top: 34px;
-    //position: static;
 
     &::after {
       position: absolute;
@@ -25,6 +24,12 @@
       height: 88px;
       background-color: rgba(@basic-black, 0.1);
     }
+  }
+}
+
+.site-nav.site-nav--js {
+  @media (min-width: @desktop-width) {
+    position: static;
   }
 }
 
