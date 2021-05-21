@@ -82,3 +82,17 @@
 .radio:active + label::before {
   border: 2px solid rgba(@medium-grey, 0.3);
 }
+
+.radio:disabled + label::before,
+.radio:disabled:hover + label::before {
+  border: 2px solid @medium-grey;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.radio:disabled + label,
+.radio:disabled:hover + label {
+  color: @medium-grey;
+  opacity: 0.3;
+  cursor: default;
+}

@@ -50,3 +50,17 @@
 .checkbox:active + label::before {
   border: 2px solid rgba(@medium-grey, 0.3);
 }
+
+.checkbox:disabled + label::before,
+.checkbox:disabled:hover + label::before {
+  border: 2px solid @medium-grey;
+  opacity: 0.3;
+  cursor: default;
+}
+
+.checkbox:disabled + label,
+.checkbox:disabled:hover + label {
+  color: @medium-grey;
+  opacity: 0.3;
+  cursor: default;
+}
