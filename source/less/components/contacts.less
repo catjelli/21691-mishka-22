@@ -178,16 +178,22 @@
 .contacts__map {
   margin-bottom: 34px;
   border: none;
+  background-image: url("../img/map-small.png");
+  background-size: cover;
 
   @media (min-width: @tablet-width) {
     width: 100%;
     margin-bottom: 49px;
+    background-image: url("../img/map-medium.png");
+    background-size: cover;
   }
 
   @media (min-width: @desktop-width) {
     width: 527px;
     order: 2;
     margin: 0;
+    background-image: url("../img/map-large.png");
+    background-size: cover;
   }
 }
 
